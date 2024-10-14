@@ -19,3 +19,4 @@ class Dog:
         """
 
         CURSOR.execute(sql)
+        CONN.commit()
