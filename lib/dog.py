@@ -4,5 +4,5 @@ CONN = sqlite3.connect('lib/dogs.db')
 CURSOR = CONN.cursor()
 
 class Dog:
+    def __init__(self, name, breed, id):
     
-    pass
