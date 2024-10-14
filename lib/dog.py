@@ -36,5 +36,5 @@ class Dog:
             VALUES (?, ?)
         """
 
-        CURSOR.execute(sql)
+        CURSOR.execute(sql, (self.name, self.breed))
         CONN.commit()
