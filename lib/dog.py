@@ -35,3 +35,6 @@ class Dog:
             INSERT INTO dogs (name, breed)
             VALUES (?, ?)
         """
+
+        CURSOR.execute(sql)
+        CONN.commit()
