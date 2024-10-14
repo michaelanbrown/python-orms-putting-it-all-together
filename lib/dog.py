@@ -20,3 +20,6 @@ class Dog:
 
         CURSOR.execute(sql)
         CONN.commit()
+
+    @classmethod
+    def drop_table(cls):
