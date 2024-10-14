@@ -8,3 +8,6 @@ class Dog:
         self.name = name
         self.breed = breed
         self.id = id
+
+    @classmethod
+    def create_table(cls):
