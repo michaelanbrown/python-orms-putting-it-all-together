@@ -17,3 +17,5 @@ class Dog:
                 name TEXT,
                 breed TEXT)
         """
+
+        CURSOR.execute(sql)
