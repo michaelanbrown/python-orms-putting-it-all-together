@@ -11,3 +11,9 @@ class Dog:
 
     @classmethod
     def create_table(cls):
+        sql = """
+            CREATE TABLE IF NOT EXISTS dogs
+                (id INTEGER PRIMARY KEY,
+                name TEXT,
+                breed TEXT)
+        """
