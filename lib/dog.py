@@ -29,3 +29,5 @@ class Dog:
 
         CURSOR.execute(sql)
         CONN.commit()
+
+    def save(self):
