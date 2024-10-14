@@ -31,3 +31,7 @@ class Dog:
         CONN.commit()
 
     def save(self):
+        sql = """
+            INSERT INTO dogs (name, breed)
+            VALUES (?, ?)
+        """
