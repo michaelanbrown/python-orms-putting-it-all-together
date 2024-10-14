@@ -26,3 +26,6 @@ class Dog:
         sql = """
             DROP TABLE IF EXISTS dogs
         """
+
+        CURSOR.execute(sql)
+        CONN.commit()
