@@ -55,3 +55,5 @@ class Dog:
             breed=row[2],
             id=row[0]
         )
+
+        return dog
