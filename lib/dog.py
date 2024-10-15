@@ -43,3 +43,4 @@ class Dog:
     def create(cls, name, breed):
         dog = cls(name, breed)
         dog.save()
+        return dog
