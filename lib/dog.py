@@ -60,3 +60,6 @@ class Dog:
 
     @classmethod
     def get_all(cls):
+        sql = """
+            SELECT * FROM dogs
+        """
