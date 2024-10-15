@@ -63,3 +63,5 @@ class Dog:
         sql = """
             SELECT * FROM dogs
         """
+
+        return [cls.new_from_db(row) for row in CURSOR.execute(sql).fetchall()]
