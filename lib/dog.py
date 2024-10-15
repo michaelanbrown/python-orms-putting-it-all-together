@@ -50,3 +50,8 @@ class Dog:
 
     @classmethod
     def new_from_db(cls, row):
+        dog = cls(
+            name=row[1],
+            breed=row[2],
+            id=row[0]
+        )
