@@ -42,3 +42,4 @@ class Dog:
     @classmethod
     def create(cls, name, breed):
         dog = cls(name, breed)
+        dog.save()
