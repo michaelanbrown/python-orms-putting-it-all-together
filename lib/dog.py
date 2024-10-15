@@ -38,3 +38,6 @@ class Dog:
 
         CURSOR.execute(sql, (self.name, self.breed))
         CONN.commit()
+
+    @classmethod
+    def create(cls, name, breed):
