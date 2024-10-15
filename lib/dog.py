@@ -47,3 +47,6 @@ class Dog:
         dog.save()
         
         return dog
+
+    @classmethod
+    def new_from_db(cls, row):
