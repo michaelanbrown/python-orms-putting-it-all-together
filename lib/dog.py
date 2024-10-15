@@ -57,3 +57,6 @@ class Dog:
         )
 
         return dog
+
+    @classmethod
+    def get_all(cls):
