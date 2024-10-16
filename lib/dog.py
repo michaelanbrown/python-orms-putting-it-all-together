@@ -106,3 +106,18 @@ class Dog:
 
     @classmethod
     def find_or_create_by(cls, name=None, breed=None):
+        sql = """
+            SELECT * FROM dogs
+            WHERE (name, breed) = (?, ?)
+            LIMIT 1
+        """
+
+        row = CURSOR.execute(sql, (name, breed)).fetchone()
+        if not row:
+            return None
+
+        return Dog(
+            name=row[1],
+            breed=row[2],
+            id=row[0]
+        )
