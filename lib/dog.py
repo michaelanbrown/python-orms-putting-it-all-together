@@ -103,3 +103,6 @@ class Dog:
             breed=row[2],
             id=row[0]
         )
+
+    @classmethod
+    def find_or_create_by(cls, name=None, breed=None):
