@@ -114,7 +114,17 @@ class Dog:
 
         row = CURSOR.execute(sql, (name, breed)).fetchone()
         if not row:
-            return None
+            sql = """
+                INSERT INTO dogs (name, breed)
+                VALUES (?, ?)
+            """
+
+            CURSOR.execute(sql, (name, breed))
+            return Dog(
+                name=name,
+                breed=breed,
+                id=CURSOR.lastrowid
+            )
 
         return Dog(
             name=row[1],
