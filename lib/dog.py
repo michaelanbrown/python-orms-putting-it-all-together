@@ -139,3 +139,6 @@ class Dog:
                 breed = ?
             WHERE id = ?
         """
+
+        CURSOR.execute(sql, (self.name, self.breed, self.id))
+        CONN.commit()
