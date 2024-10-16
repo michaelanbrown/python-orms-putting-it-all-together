@@ -74,7 +74,7 @@ class Dog:
             LIMIT 1
         """
 
-        row = CURSOR.execute(sql, (name,))
+        row = CURSOR.execute(sql, (name,)).fetchone()
         
         if not row:
             return None
