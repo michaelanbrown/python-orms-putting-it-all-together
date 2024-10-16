@@ -75,3 +75,6 @@ class Dog:
         """
 
         row = CURSOR.execute(sql, (name,))
+        
+        if not row:
+            return None
