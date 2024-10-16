@@ -133,3 +133,9 @@ class Dog:
         )
 
     def update(self):
+        sql = """
+            UPDATE dogs
+            SET name = ?,
+                breed = ?
+            WHERE id = ?
+        """
