@@ -68,3 +68,8 @@ class Dog:
 
     @classmethod
     def find_by_name(cls, name):
+        sql = """
+            SELECT * FROM dogs
+            WHERE name = ?
+            LIMIT 1
+        """
