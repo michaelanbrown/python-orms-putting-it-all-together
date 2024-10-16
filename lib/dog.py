@@ -84,3 +84,6 @@ class Dog:
             breed=row[2],
             id=row[0]
         )
+
+    @classmethod
+    def find_by_id(cls, id):
