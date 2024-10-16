@@ -131,3 +131,5 @@ class Dog:
             breed=row[2],
             id=row[0]
         )
+
+    def update(self):
