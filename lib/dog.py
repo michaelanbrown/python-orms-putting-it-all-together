@@ -73,3 +73,5 @@ class Dog:
             WHERE name = ?
             LIMIT 1
         """
+
+        row = CURSOR.execute(sql, (name,))
