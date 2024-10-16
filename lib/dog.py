@@ -78,3 +78,9 @@ class Dog:
         
         if not row:
             return None
+
+        return Dog(
+            name=row[1],
+            breed=row[2],
+            id=row[0]
+        )
