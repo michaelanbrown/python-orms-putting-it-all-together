@@ -65,3 +65,6 @@ class Dog:
         """
 
         return [cls.new_from_db(row) for row in CURSOR.execute(sql).fetchall()]
+
+    @classmethod
+    def find_by_name(cls, name):
